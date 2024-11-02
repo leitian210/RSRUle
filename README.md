@@ -10,10 +10,15 @@ We used NVIDIA RTX A6000, NVIDIA GeForce RTX 2080 Ti, and NVIDIA GeForce RTX 309
 
 The command to reproduce the results in our paper:
 
-python learn.py -d icews14 -l 1 2 3 -n 200 -p 16 -s 12
-python apply.py -d icews14 -r 101221144026_r[1,2,3]_n200_exp_s12_rules.json -l 1 2 3 -w 0 -p 8
-python evaluate.py -d icews14 -c 101221144026_r[1,2,3]_n200_exp_s12_cands_r[1,2,3]_w0_score_12[0.1,0.5].json
+```
+cd codes
 
+python learn.py -d icews14 -l 1 2 3 -n 200 -p 16 -s 12
+
+python apply.py -d icews14 -r 101221144026_r[1,2,3]_n200_exp_s12_rules.json -l 1 2 3 -w 0 -p 8
+
+python evaluate.py -d icews14 -c 101221144026_r[1,2,3]_n200_exp_s12_cands_r[1,2,3]_w0_score_12[0.1,0.5].json
+```
 
 
 ## Our work are based on
